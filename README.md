@@ -1,0 +1,1 @@
+Glossario dei termini che incontreremo durante il corso. Mano a mano aggiungeremo dei nuovi termini con le loro definizioni e modificheremo anche la struttura di questo pregettino.
