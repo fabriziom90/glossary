@@ -4,68 +4,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primo live coding</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Glossario</title>
 </head>
 
 <body>
-    <img src="./img/boolean_logo.png" alt="Logo Boolean">
-    <h1>BoolGlossary</h1>
-    <div>
-        <h2>Il glossario ufficiale di classe 129 di Boolean</h2>
-        <p>
-            Il glossario della classe 129 di Boolean. Giorno per giorno, lezione dopo lezione, lo aggiorneremo andando
-            anche a stilizzarlo nei colori, nelle forme e nello stile in generale. Vi servira come live coding
-            integrativo.
-        </p>
-    </div>
-    <div>
-        <h2>Punti centrali del glossario</h2>
-        <ul>
-            <li>Verrà aggiornato quasi tutti i giorni</li>
-            <li>Implementeremo quello che vedremo in alcune lezioni anche quì oltre che sui live coding specifici</li>
-            <li>Mano a mano che andremo avanti nel corso aggiungeremo funzionalità varie</li>
-        </ul>
-    </div>
-    <div>
-        <h2>Glossario</h2>
-    </div>
-    <hr>
-    <div>
-        <h3>GIT</h3>
-        <table>
-            <thead>
-                <tr>
-                    <td><strong>Vocaboli</strong></td>
-                    <td><strong>Descrizione</strong></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>GIT</td>
-                    <td>sistema di versionamento che ci permette di tenere traccia di tutte le modifiche che avvengono
-                        all'interno di un progetto, permettendo di avere più versioni dello stesso.
-                    </td>
-                </tr>
-                <tr>
-                    <td>REPOSITORY</td>
-                    <td>insieme dei file e delle cartelle e della loro storia che compongono il progetto che vogliamo
-                        tracciare con git
-                    </td>
-                </tr>
-                <tr>
-                    <td>STAGING</td>
-                    <td>inserire i file che abbiamo modificato in un'area temporanea
-                    </td>
-                </tr>
-                <tr>
-                    <td>GIT</td>
-                    <td>sistema di versionamento che ci permette di tenere traccia di tutte le modifiche che avvengono
-                        all'interno di un progetto, permettendo di avere più versioni dello stesso.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <header>
+        <!-- <img class="logo" src="./img/boolean_logo.png" alt="Logo Boolean"> -->
+
+        <img class="logo d-inline-block  v-align-middle" src="./img/logo_boolean_zoom.png" alt="Logo Boolean">
+        <h2 class="d-inline-block v-align-middle">Boolean</h2>
+
+    </header>
+    <main class="py-30">
+        <div class="container">
+            <div class="background-white p-20">
+
+                <h1 class="text-center fontsize-50">BoolGlossary</h1>
+
+                <div class="my-30">
+                    <h2>Il glossario ufficiale di classe 129 di Boolean</h2>
+                    <p>
+                        Il glossario della classe 129 di Boolean. Giorno per giorno, lezione dopo lezione, lo
+                        aggiorneremo
+                        andando
+                        anche a stilizzarlo nei colori, nelle forme e nello stile in generale. Vi servira come live
+                        coding
+                        integrativo.
+                    </p>
+                </div>
+                <div class="my-30">
+                    <h2>Punti centrali del glossario</h2>
+                    <ul>
+                        <li><span class="circle bg-blue">&#9679;</span>Verrà aggiornato quasi tutti i giorni <span
+                                class="label bg-green">Aggiornamento</span></li>
+                        <li><span class="circle bg-blue">&#9679;</span>Implementeremo quello che vedremo in alcune
+                            lezioni
+                            anche quì oltre che sui live coding specifici <span class="label bg-blue">Pratica</span>
+                        </li>
+                        <li><span class="circle bg-blue">&#9679;</span>Mano a mano che andremo avanti nel corso
+                            aggiungeremo funzionalità varie <span class="label bg-green">Funzionalità</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="glossary">
+                    <h2>Glossario</h2>
+                </div>
+                <hr>
+                <div>
+                    <h3>GIT</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Vocaboli</th>
+                                <th>Descrizione</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>GIT</td>
+                                <td>Sistema di versionamento che ci permette di tenere traccia di tutte le modifiche che
+                                    avvengono
+                                    all'interno di un progetto, permettendo di avere più versioni dello stesso.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>REPOSITORY</td>
+                                <td>Insieme dei file e delle cartelle e della loro storia che compongono il progetto che
+                                    vogliamo
+                                    tracciare con git
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>STAGING</td>
+                                <td>Inserire i file che abbiamo modificato in un'area temporanea
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>COMMIT</td>
+                                <td>Creare uno stato recuperabile del progetto.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PUSH</td>
+                                <td>Operazione di upload dello/degli stato/i del progetto creato/i attraverso i commit.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>REVERT</td>
+                                <td>Tornare ad uno stato precedente del progetto, senza cancellare la storia passata.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>RESET</td>
+                                <td>Ritorno ad un commit precedente alterando la storia passata. Se si fa l'hard reset
+                                    si
+                                    cancella
+                                    la storia, se si fa il reset semplice le modifiche dei commit successivi a quello in
+                                    cui
+                                    si
+                                    vuole tornare vengono messe in area di staging.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <div>
+                    <h3>Tag HTML</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Vocaboli</th>
+                                <th>Descrizione</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML</td>
+                                <td> L'html è un linguaggio di Markup (HTML: Hypertext Markup Language) che si occupa
+                                    della
+                                    visualizzazione delle pagine e non contiene logica. NON è un linguaggio di
+                                    programmazione.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BLOCK LEVEL TAGS</td>
+                                <td> Tag che occupano tutta la riga della pagina costringendo l'elemento successivo a
+                                    posizionarsi
+                                    in una nuova linea.</td>
+                            </tr>
+                            <tr>
+                                <td>INLINE TAGS</td>
+                                <td> Tag che occupano solo lo spazio del loro contenuto. Gli elementi successivi, SE
+                                    INLINE,
+                                    si
+                                    posizioneranno di fianco. </td>
+                            </tr>
+                            <tr>
+                                <td>SELF CLOSING TAG</td>
+                                <td> Tag che non prevedono contenuto, non hanno un tag di chiusura;</td>
+                            </tr>
+                            <tr>
+                                <td>ENTITIES</td>
+                                <td> Codice HTML per rappresentare caratteri speciali, come ad esempio lettere
+                                    accentate,
+                                    simboli di
+                                    valuta e altri simboli generici</td>
+                            </tr>
+                            <tr>
+                                <td>PATH ASSOLUTI</td>
+                                <td> Partono dall'inizio, tipicamente C o comunque la posizione iniziale dell'hard disk
+                                    per
+                                    arrivare
+                                    dove è l'immagine</td>
+                            </tr>
+                            <tr>
+                                <td>PATH RELATIVI</td>
+                                <td> Partono da dove ci troviamo per andare dove si trova l'immagine.</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h3>CSS</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Vocaboli</th>
+                                <th>Descrizione</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CSS</td>
+                                <td>CSS (Cascade StyleSheet) Sono degli insiemi di regole che servono per personalizzare
+                                    le
+                                    nostre
+                                    pagine</td>
+                            </tr>
+                            <tr>
+                                <td>SELETTORE</td>
+                                <td>E' un modo per indicare un elemento dell'html a cui applciare delle regole di stile
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ID</td>
+                                <td>Identificatore univoco da utilizzare all'interno di un documento una volta sola. A
+                                    questo id
+                                    possiamo applicare delle regole di stile</td>
+                            </tr>
+                            <tr>
+                                <td>CLASSE</td>
+                                <td>E' un selettore che definiamo una volta sola all'interno del file css, ma possiamo
+                                    utilizzare
+                                    tutte le volte che vogliamo all'interno dell'html</td>
+                            </tr>
+                            <tr>
+                                <td>PADDING</td>
+                                <td>Il padding è la distanza tra il contenuto ed il bordo interno del suo contenitore
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MARGIN</td>
+                                <td>Il margine è la distanza tra i bordi esterni di due elementi adiacenti</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
