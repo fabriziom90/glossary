@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #001533;
+}
+
+header {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+.background-white {
+    background-color: white;
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse
+}
+
+td,
+th {
+    padding: 10px
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 20px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fontsize-50 {
+    font-size: 50px;
+}
+
+.my-30 {
+    margin: 30px 0;
+}
+
+.py-30 {
+    padding: 30px 0;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+#glossary {
+    margin: 20px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.logo {
+    width: 100px;
+}
+
+.v-align-middle {
+    vertical-align: middle;
+}
+
+.circle {
+    padding: 1px 6px;
+    border-radius: 50%;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.label {
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.bg-green {
+    background-color: #00e165;
+}
+
+.bg-blue {
+    background-color: #001533;
+}
